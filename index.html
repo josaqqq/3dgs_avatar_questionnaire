@@ -8,13 +8,16 @@
   <script type="text/javascript">
     function randomRedirect() {
       let urls = [
-        "https://forms.gle/HYgXKnMfHhBfKyto9",   // Pattern-1
-        "https://forms.gle/mJsML3Txt56EKGtQ6",   // Pattern-2
+        "https://forms.gle/VaLGkNRsZtdGJgfs8",   // Pattern-1
+        "https://forms.gle/2YgBhc75SM3NHNpM7",   // Pattern-2
       ];
       const now = new Date().getTime();
       const idx = now % 2;
       let randomUrl = urls[now];
       window.location.href = randomUrl;
+    }
+    window.onload = () => {
+      randomRedirect();
     }
   </script>
 </body>
