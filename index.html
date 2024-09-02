@@ -14,6 +14,11 @@
       const now = new Date().getTime();
       const idx = now % 2;
       let randomUrl = urls[now];
+
+      console.log(now);
+      console.log(idx);
+      console.log(randomUrl);
+      
       window.location.href = randomUrl;
     }
     window.onload = () => {
