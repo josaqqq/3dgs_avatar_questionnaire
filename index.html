@@ -11,7 +11,9 @@
         "https://forms.gle/awoqqt6hQnVKNd4F6",   // Pattern-1
         "https://forms.gle/4xUdrahPg9ULs6mu6",   // Pattern-2
       ];
-      let randomUrl = urls[Math.floor(Math.random() * urls.length)];
+      const now = new Date().getTime();
+      const idx = now % 2;
+      let randomUrl = urls[now];
       window.location.href = randomUrl;
     }
     window.onload = () => {
