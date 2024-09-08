@@ -6,7 +6,12 @@
 </head>
 <body>
   <script type="text/javascript">
-    document.write('<meta http-equiv="refresh" content="0;url=https://forms.gle/9R3EgqLcjfkDY5Gq9" />');
+    let randomValue = Math.random() < 0.5;
+    if (randomValue) {
+      document.write('<meta http-equiv="refresh" content="0;url=https://forms.gle/9R3EgqLcjfkDY5Gq9" />');
+    } else {
+      document.write('<meta http-equiv="refresh" content="0;url=https://forms.gle/SyZL44owJcbH3XSZ6" />');
+    }
   </script>
 </body>
 </html>
